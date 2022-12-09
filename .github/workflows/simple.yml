@@ -17,5 +17,11 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
-     
-
+   run-Windows-commands:
+  runs-on: Windows-latest  
+  steps:
+    - name: Directory Powershell
+      run: Get-Locatin # In Bash wold be run "pwd"
+    - name: Directory Bash
+      run: pwd
+      shell: bash  
