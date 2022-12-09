@@ -21,7 +21,7 @@ jobs:
     runs-on: Windows-latest  
     steps:
       - name: Directory Powershell
-        run: Get-Locatin # In Bash wold be run "pwd"
+        run: Get-Location # In Bash would be run "pwd"
       - name: Directory Bash
         run: pwd
         shell: bash  
